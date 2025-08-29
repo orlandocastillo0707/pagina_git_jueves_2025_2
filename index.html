@@ -1,16 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi primera pagina</title>
+    <title>Mi primera pagina con Cards</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <center>
-        <h1>Imagen aleatoria de picsum</h1>
-        <img src="https://picsum.photos/600/600" alt="Imagenes aleatorias">
-        <br
-    </center>    
+    <div class="container">
+        <h1>Galería de Imágenes Aleatorias</h1>
+        
+        <div class="cards-container">
+            <div class="card" data-id="1">
+                <img src="https://picsum.photos/300/200?random=1" alt="Imagen aleatoria 1">
+                <div class="card-content">
+                    <h3>Imagen Aleatoria 1</h3>
+                    <p>Una hermosa imagen generada aleatoriamente desde Picsum.</p>
+                    <button class="btn">Ver más</button>
+                </div>
+            </div>
+            
+            <div class="card" data-id="2">
+                <img src="https://picsum.photos/300/200?random=2" alt="Imagen aleatoria 2">
+                <div class="card-content">
+                    <h3>Imagen Aleatoria 2</h3>
+                    <p>Otra increíble foto para nuestra galería.</p>
+                    <button class="btn">Ver más</button>
+                </div>
+            </div>
+            
+            <div class="card" data-id="3">
+                <img src="https://picsum.photos/300/200?random=3" alt="Imagen aleatoria 3">
+                <div class="card-content">
+                    <h3>Imagen Aleatoria 3</h3>
+                    <p>Disfruta de esta imagen única y especial.</p>
+                    <button class="btn">Ver más</button>
+                </div>
+            </div>
+            
+            <div class="card" data-id="4">
+                <img src="https://picsum.photos/300/200?random=4" alt="Imagen aleatoria 4">
+                <div class="card-content">
+                    <h3>Imagen Aleatoria 4</h3>
+                    <p>La última de nuestras imágenes seleccionadas.</p>
+                    <button class="btn">Ver más</button>
+                </div>
+            </div>
+        </div>
+        
+        <button id="reload-btn" class="reload-button">Cargar nuevas imágenes</button>
+    </div>
     
+    <script src="script.js"></script>
 </body>
 </html>
